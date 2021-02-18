@@ -1,0 +1,1480 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- The packages attached are in the order of Bootstrap, Google Fonts for specifically the Barlow font, Google Fonts for specifically the Metal Mania Font, and Font Awesome. Font Awesome contains -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Metal+Mania&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/da962b0159.js" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="owl.carousel.min.css">
+		<link rel="stylesheet" href="owl.theme.default.min.css">
+		<link rel = "shortcut icon" type = "image/png" href = "Images/Logo/RTW_favicon.png">
+		<title>#RealTalkWindsor</title>
+		<style>
+		
+/*-----------------------------------This CSS controls features across the entire page--------------------------------------------------*/
+
+		body{ 
+				background: black !important; 
+				font-family: 'Barlow', sans-serif;
+			}
+			
+/*--------------------------------------This CSS is for the top social media icons and Subscribe button ----------------------------------*/
+			
+			#top-icon{
+				color: white !important;
+				margin: 0 !important; 
+				padding: 0 !important; 
+				margin-left: 1.6% !important; 
+			}
+			
+			#top-icon:hover{
+				transition: .5s;
+				color: #f5c400 !important;
+			}
+			
+			#top-button{
+				font-size: 3.5vw !important;
+				width: 100% !important; 
+				color: black !important; 
+				background-color: #f5c400 !important; 
+				border-radius: 0 !important; 
+				border: none !important; 
+			}
+			
+			#top-button:hover{
+				transition: .5s;
+				background-color: #cca300 !important;
+			}
+					
+			ul li{
+				list-style: none;
+				float:right;
+				margin-left: 10px;
+				margin-top: 10px;
+				margin-bottom: 0 !important;
+			}
+
+			ul li a{
+				position:relative;
+				display:inline;
+				color: white;
+				transition: .5s;
+				margin-bottom: 0 !important;
+			}
+			
+			.socials{
+				margin-bottom: 0 !important; 
+			}
+			
+			
+			@media only screen and (max-width: 600px){
+				#top-icon{
+					font-size: 4.2vw !important; 
+				}
+				
+				#top-button{
+					font-size: 4.2vw !important;
+				}
+				
+				#top-icon{ 
+					margin-left: 2.5% !important; 
+				}
+			}
+			
+			@media only screen and (min-width: 601px) and (max-width: 767px){
+				#top-icon{
+					font-size: 3.4vw; 
+				}
+				
+				#top-button{
+					font-size: 3.4vw !important;
+				}
+				
+				#top-icon{ 
+					margin-left: 2% !important; 
+				}
+			}
+			
+			@media only screen and (min-width: 768px) and (max-width: 991px){
+				
+				#top-icon{
+					font-size: 2.4vw; 
+				}
+				
+				#top-button{
+					font-size: 2.4vw !important;
+				}
+				
+				#top-icon{ 
+					margin-left: 1.5% !important; 
+				}
+			}
+			
+			@media only screen and (min-width: 992px) and (max-width: 1200px){
+				#top-icon{
+					font-size: 2vw; 
+				}
+				
+				#top-button{
+					font-size: 2vw !important;
+				}
+				
+				#top-icon{ 
+					margin-left: 1% !important; 
+				}
+			}
+			
+			@media screen and (min-width: 1201px){	
+				#top-icon{
+					font-size: 1.2vw; 
+				}
+				
+				#top-button{
+					font-size: 1.2vw !important;
+				}
+				
+				#top-icon{ 
+					margin-left: 1% !important; 
+				}
+			}
+			
+/*-----------------------------------This CSS is for main logo--------------------------------------------------*/
+
+		.header-img{
+			margin: 0;
+		}
+		
+		@media only screen and (max-width: 600px){
+			.header-img{
+				width: 35%;
+			}
+		}
+		
+		@media only screen and (min-width: 601px) and (max-width: 767px){
+			.header-img{
+				width: 30%;
+			}
+		}
+		
+		@media only screen and (min-width: 768px) and (max-width: 991px){
+			.header-img{
+				width: 25%;
+			}
+		}
+		
+		@media only screen and (min-width: 992px) and (max-width: 1200px){
+			.header-img{
+				width: 20%;
+			}
+		}
+		
+		@media only screen and (min-width: 1201px){
+			.header-img{
+				width: 15%;
+			}
+		}
+		
+/*-----------------------------------This CSS is for the navigation menu--------------------------------------------------*/
+		
+		.centered{
+		  text-align: center;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  color: white;
+		}
+		
+		.navbar{
+			background-color: black !important;
+			margin: 0 !important;
+			padding: 0;
+			min-height: 100px;
+		}
+		
+		.navbar.navbar-dark a{
+			color: white !important;
+		}
+		
+		.navbar.navbar-dark a:hover{
+			color: #f5c400 !important;
+		}
+		
+		.navbar-toggler{
+			color: white !important;
+		}
+		
+		.navbar-nav{
+			margin:0 auto;
+		}
+		
+		.navbar-nav > li{
+			margin-top: 0 !important;
+		}
+		
+		.nav a{
+			font-size: 1.2em !important;
+		}
+		
+		.current-tab{
+			color: #f5c400 !important;
+		}
+		
+		.shop-tab{
+			color: #f5c400 !important;
+		}
+		
+		.shop-tab:hover{
+			transition: .5s;
+			color: white !important;
+		}
+		
+		.animated-icon {
+			width: 30px;
+			height: 20px;
+			position: relative;
+			margin: 0px;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: .5s ease-in-out;
+			-moz-transition: .5s ease-in-out;
+			-o-transition: .5s ease-in-out;
+			transition: .5s ease-in-out;
+			cursor: pointer;
+		}
+		
+		.animated-icon span {
+			display: block;
+			position: absolute;
+			height: 3px;
+			width: 100%;
+			background: white;
+			border-radius: 9px;
+			opacity: 1;
+			left: 0;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: .25s ease-in-out;
+			-moz-transition: .25s ease-in-out;
+			-o-transition: .25s ease-in-out;
+			transition: .25s ease-in-out;
+		}
+		
+		.animated-icon span:nth-child(1) {
+			top: 0px;
+		}
+
+		.animated-icon span:nth-child(2), .animated-icon span:nth-child(3) {
+			top: 10px;
+		}
+
+		.animated-icon span:nth-child(4) {
+			top: 20px;
+		}
+		
+		.animated-icon.open span:nth-child(1) {
+			top: 11px;
+			width: 0%;
+			left: 50%;
+		}
+		
+		.animated-icon.open span:nth-child(2) {
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+
+		.animated-icon.open span:nth-child(3) {
+			-webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+
+		.animated-icon.open span:nth-child(4) {
+			top: 11px;
+			width: 0%;
+			left: 50%;
+		}
+		
+		
+/*-----------------------------------This CSS is for the Coming Up bar--------------------------------------------------*/
+		
+		.desktop_coming_up{
+			background: #f5c400 !important;
+			margin: 0 !important;
+		}
+		
+		.mobile_coming_up{
+			background: #f5c400 !important;
+			margin: 0 !important; 
+		}
+		
+		@media only screen and (max-width: 767px){
+			.desktop_coming_up{
+				display: none !important;
+			}
+			
+			.mobile_coming_up{
+				display: 1 !important; 
+			}
+		}
+		
+		@media only screen and (min-width: 768px){
+			.desktop_coming_up{
+				display: 1 !important;
+			}
+			
+			.mobile_coming_up{
+				display: none !important; 
+			}
+		}	
+		
+/*-----------------------------------This CSS is for the carousel--------------------------------------------------*/
+		
+		.carousel-btn{
+			border-radius: 0 !important;
+			background: transparent !important;
+			float: center;
+			-webkit-transition: all 0.5s ease-in-out;
+			border: none !important;
+			outline: none !important;
+			border-bottom: 1px solid white !important;
+			color: white !important;
+		}
+
+		.carousel-btn:hover{
+			color: #f5c400 !important;
+			border-bottom: 1px solid #f5c400 !important;
+		}
+		
+		#first-carousel{
+			background-position: center; 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-image: url("Images/1.png"); 
+			margin: 0 !important; 
+		}
+		
+		.img-container{
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Events/2020/divine_connection.png");		
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center; 
+			position: relative;
+			-webkit-filter: blur(20px);
+			-moz-filter: blur(20px);
+			-o-filter: blur(20px);
+			-ms-filter: blur(20px);
+			filter: blur(20px);
+		}
+		
+		@media only screen and (max-width: 600px){
+			.carousel-item{
+				height: 55vh !important; 
+			}
+			
+			.carousel-header{
+				font-size: 8.5vw !important; 
+			}
+			
+			.carousel-btn{
+				font-size: 5vw !important; 
+				margin: 10%; 
+			}
+			
+			.img-container{
+				height: 55vh !important;
+			}
+			
+			.upcoming_pic{
+				width: 80% !important; 
+			}
+		}
+		
+		@media only screen and (min-width: 601px) and (max-width: 767px){
+			.carousel-item{
+				height: 50vh !important; 
+			}
+			
+			.carousel-header{
+				font-size: 6vw !important; 
+			}
+			
+			.carousel-btn{
+				font-size: 4vw !important; 
+				margin: 8%; 
+			}
+			
+			.img-container{
+				height: 50vh !important;
+			}
+			
+			.upcoming_pic{
+				width: 70% !important; 
+			}
+		}
+		
+		@media only screen and (min-width: 768px) and (max-width: 991px){
+			.carousel-item{
+				height: 45vh !important; 
+			}
+			
+			.carousel-header{
+				font-size: 5.5vw !important; 
+			}
+			
+			.carousel-btn{
+				font-size: 3.5vw !important; 
+				margin: 8%; 
+			}
+			
+			.img-container{
+				height: 45vh !important;
+			}
+			
+			.upcoming_pic{
+				width: 50% !important; 
+			}
+		}
+		
+		@media only screen and (min-width: 992px) and (max-width: 1200px){
+			.carousel-item{
+				height: 43vh !important; 
+			}
+			
+			.carousel-header{
+				font-size: 4.5vw !important; 
+			}
+			
+			.carousel-btn{
+				font-size: 3vw !important; 
+				margin: 8%; 
+			}
+			
+			.img-container{
+				height: 43vh !important;
+			}
+			
+			.upcoming_pic{
+				width: 40% !important; 
+			}
+		}
+		
+		@media only screen and (min-width: 1201px){
+			.carousel-item{
+				height: 65vh !important; 
+			}
+			
+			.carousel-header{
+				font-size: 3.8vw !important; 
+			}
+			
+			.carousel-btn{
+				font-size: 2.2vw !important; 
+				margin: 8%; 
+			}
+			
+			.img-container{
+				height: 65vh !important;
+			}
+			
+			.upcoming_pic{
+				width: 45% !important; 
+			}
+		}
+/*-----------------------------------This CSS is for the shop featurette--------------------------------------------------*/
+
+		#shop-featurette{
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/shop_featurette.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		
+		.merch-header{
+			color: #f5c400 !important;
+			font-family: 'Metal Mania', cursive;
+		}
+		
+		.shop-btn{
+			border-radius: 0 !important;
+			background: transparent !important;
+			float: center;
+			-webkit-transition: all 0.5s ease-in-out;
+			border: none !important;
+			outline: none !important;
+			border-bottom: 1px solid white !important;
+			color: white !important;
+		}
+		
+		.shop-btn:hover{
+			color: #f5c400 !important;
+			border-bottom: 1px solid #f5c400 !important;
+		}
+		
+		@media only screen and (max-width: 600px){
+			#shop-featurette{
+				height: 45vh !important; 
+			}
+			
+			.merch-header{
+				font-size: 15vw !important; 
+			}
+			
+			.shop-btn{
+				font-size: 5vw !important; 
+				margin-top: 3%;
+			}
+		}
+		
+		@media only screen and (min-width: 601px) and (max-width: 767px){
+			#shop-featurette{
+				height: 35vh !important; 
+			}
+			
+			.merch-header{
+				font-size: 10vw !important; 
+			}
+			
+			.shop-btn{
+				font-size: 4vw !important; 
+				margin-top: 3%;
+			}
+		}
+		
+		@media only screen and (min-width: 768px) and (max-width: 991px){
+			#shop-featurette{
+				height: 31vh !important; 
+			}
+			
+			.merch-header{
+				font-size: 8vw !important; 
+			}
+			
+			.shop-btn{
+				font-size: 3.5vw !important; 
+				margin-top: 3%;
+			}
+		}
+		
+		@media only screen and (min-width: 992px) and (max-width: 1200px){
+			#shop-featurette{
+				height: 31vh !important; 
+			}
+			
+			.merch-header{
+				font-size: 7vw !important; 
+			}
+			
+			.shop-btn{
+				font-size: 3vw !important; 
+				margin-top: 3%;
+			}
+		}
+		
+		@media only screen and (min-width: 1201px){
+			#shop-featurette{
+				height: 58vh !important; 
+			}
+			
+			.merch-header{
+				font-size: 6vw !important; 
+			}
+			
+			.shop-btn{
+				font-size: 2.2vw !important; 
+				margin-top: 3%;
+			}
+		}
+		
+/*-----------------------------------This CSS is for the Instagram feed--------------------------------------------------*/
+		
+		.card{
+			border: 0 !important;
+			background: none !important;
+			margin: 0 !important;
+		}
+		
+		.card:hover .image{
+			opacity: 0.3;
+		}
+
+		.card:hover .middle{
+			opacity: 1
+		}
+		
+		.owl-theme .owl-nav [class*=owl-]{
+			margin-top: 0 !important;
+			color: white !important;
+			font-size: 50px !important;
+		}
+		
+		.owl-theme .owl-nav [class*=owl-]:hover{
+			background: none !important;
+			color: #f5c400 !important;
+		}
+
+		.owl-theme .owl-nav [class*=owl-]:focus{
+			border: 0 !important;
+			outline: 0 !important;
+		}
+
+		.owl-stage {
+			display: flex;
+		}
+		
+		.owl-item {
+			display: flex;
+			flex: 1;
+		}
+
+		.image{
+			opacity: 1;
+			transition: .5s ease;
+			backface-visibility: hidden;
+			margin-bottom: 0 !important;
+		}
+		
+		.middle{
+			transition: 1s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		
+		#post-button{
+			color: black;
+			background-color: white;
+			border-radius: 0 !important;
+			outline: 0;
+			border: 0;
+			width: 100%;
+		}
+		
+/*------------------------------This CSS is for the Stay Connected tab ------------------------------*/
+			
+			.stayconnected_bar{
+				background: #f5c400;
+			}
+			
+			.second-header{
+				position: relative;
+				padding-top: 1%;
+				padding-bottom: 1%;
+			}
+			
+			.bottomsocial > i{
+				color:black;
+				margin-right: 5px;
+			}
+			
+			#first-icon{
+				margin-left: 2%;
+			}
+			
+			.bottomsocial > i:hover{
+				transition: .5s;
+				color:white;
+			}
+			
+			@media screen and (max-width: 600px){
+				.second-header{
+					font-size: 5vw !important; 
+					padding-top: 3.5%;
+					padding-bottom: 3.5%;
+				}
+				
+				.bottomsocial > i{
+					font-size: 5vw !important; 
+				}
+			}
+			
+			@media screen and (min-width: 601px) and (max-width: 767px){
+				.second-header{
+					font-size: 3.5vw; 
+					padding-top: 2.5%;
+					padding-bottom: 2.5%;
+				}
+				
+				.bottomsocial > i{
+					font-size: 3.5vw !important; 
+				}
+			}
+			
+			@media screen and (min-width: 768px) and (max-width: 991px){	
+				.second-header{
+					font-size: 2.6vw; 
+					padding-top: 2%;
+					padding-bottom: 2%;
+				}
+				
+				.bottomsocial > i{
+					font-size: 2.6vw !important; 
+				}
+			}
+			
+			@media screen and (min-width: 992px) and (max-width: 1200px){	
+				.second-header{
+					font-size: 2.2vw; 
+					padding-top: 1.5%;
+					padding-bottom: 1.5%;
+				}
+				
+				.bottomsocial > i{
+					font-size: 2.2vw !important; 
+				}
+			}
+			
+			@media screen and (min-width: 1201px){	
+				.second-header{
+					font-size: 1.6vw; 
+					padding-top: 1%;
+					padding-bottom: 1%;
+				}
+				
+				.bottomsocial > i{
+					font-size: 1.6vw !important; 
+				}
+			}
+
+/*----------------------------------------------This CSS is for the footer -----------------------------------------------*/
+			
+			#feedback-button{
+				color: black;
+				background-color: white;
+				border-radius: 0 !important;
+				outline: 0;
+				border: 0;
+				width: 100%;
+			}
+			
+			#feedback-button:hover{
+				transition: .5s;
+				background-color: #cccccc !important;
+			}
+			
+			#feedback-button:focus, #feedback-button:active{
+				outline: none !important;
+				box-shadow: none;
+			}
+				
+			
+			.form-control:focus {
+				transition: .3s;
+				border: 3px solid #f5c400;
+				box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(245, 196, 0, 0.5);
+			}
+			.modal-content{
+				background-color: black;
+				color: #f5c400;
+			}
+			
+			.close{
+				color: #f5c400;
+				text-shadow: none;
+				opacity: 1;
+			}
+			
+			.close:hover{
+				color: white !important;
+			}
+			
+			#pop-up-button{
+				background-color: #f5c400 !important;
+				border-radius: 0 !important;
+				border: none;
+				color: black;
+			}
+			
+			#pop-up-button:focus, #pop-up-button:active{
+				outline: none !important;
+				box-shadow: none;
+			}
+			
+			
+			
+			#mc_embed_signup{
+				background:black; 
+				font:14px;  
+			}
+			
+			#mc_embed_signup h4 {
+				text-align: center;
+				color: white !important
+			}
+			
+			#mc_embed_signup label{
+				margin-top: 5px !important;
+				color: white !important;
+			}
+			
+			#mc_embed_signup .mc-field-group input {
+				background-color: black !important;
+				border-radius: 0 !important;
+				color: white !important;
+				border: 0;
+				outline: 0;
+				background: transparent;
+				border-bottom: 1px solid #f5c400;
+				height: 35px;
+				width:100%;
+			}
+			
+			#mc_embed_signup #mc-embedded-subscribe {
+				background-color: #f5c400 !important;
+				color: black !important;
+				border-radius: 1 !important;
+				border: 0;
+				width: 90%;
+				display: block;
+			}
+			
+			#mc_embed_signup #mc-embedded-subscribe:hover {
+				background: #cca300 !important;
+			}
+			
+			#mc_embed_signup #mc-embedded-subscribe:focus {
+				outline: 0 !important;
+			}
+			
+			@media screen and (max-width: 767px){
+				.mobile_space{
+					display: none;
+				}
+				
+				#mc_embed_signup #mc-embedded-subscribe {
+					width: 60%;
+				}
+				
+				#mc_embed_signup{
+					font-size: 4vw; 
+				}
+				
+				#feedback-button{
+					font-size: 4vw; 
+				}
+			}	
+			
+			@media screen and (min-width: 768px) and (max-width: 1200px){
+				.mobile_space{
+					display: 1;
+				}
+				
+				#mc_embed_signup{
+					font-size: 1.9vw; 
+				}
+				
+				#feedback-button{
+					font-size: 1.9vw; 
+				}
+				
+			}
+			
+			@media screen and (min-width: 1201px){	
+				.mobile_space{
+					display: none;
+				}
+				
+				#feedback-button{
+					width: 60%; 
+				}
+			}
+			
+			hr{
+				height: 1px;
+				background-color: white;
+				width: 100%;
+				opacity: 0.1;
+				margin: 0;
+			}
+			
+			#footer-image{
+				width: 5%;
+			}
+			
+			.copyright-text{
+				color: white !important;
+			}
+			
+			@media screen and (max-width: 600px){
+				.subscribe_space{
+					display: 1 !important; 
+				}
+				#feedback-button{
+					font-size: 4.5vw !important; 
+					padding: 2.5% !important; 
+					width: 60%;
+					margin-bottom: 10%;
+				}
+				
+				.feedback-icon{
+					font-size: 4.5vw !important; 
+				}
+				
+				#mc_embed_signup{
+					font-size: 4.5vw !important;  
+				}
+				#mc_embed_signup h4 {
+					font-size: 6.5vw !important; 
+				}
+				
+				#mc_embed_signup .mc-field-group input {
+					margin-bottom: 10% important; 
+				}
+				
+				#mc_embed_signup #mc-embedded-subscribe {
+					font-size: 4.5vw !important; 
+					padding: 2.5% !important; 
+					width: 60%;
+				}
+				
+				#footer-image{
+					width: 15%;
+				}
+				
+				.copyright-text{
+					font-size: 4vw !important; 
+				}
+			}
+			
+			@media screen and (min-width: 601px) and (max-width: 767px){
+				.subscribe_space{
+					display: 1 !important; 
+				}
+				
+				#feedback-button{
+					font-size: 3.5vw !important; 
+					padding: 2% !important; 
+					width: 55%;
+					margin-bottom: 10%;
+				}
+				
+				.feedback-icon{
+					font-size: 3.5w !important; 
+				}
+				
+				#mc_embed_signup{
+					font-size: 3.5vw !important;  
+				}
+				#mc_embed_signup h4 {
+					font-size: 5.5vw !important; 
+				}
+				
+				#mc_embed_signup #mc-embedded-subscribe {
+					font-size: 3.5vw !important; 
+					padding: 2% !important; 
+					width: 55%;
+				}
+				
+				#footer-image{
+					width: 12%;
+				}
+				
+				.copyright-text{
+					font-size: 3.2vw !important; 
+				}
+			}
+			
+			@media screen and (min-width: 768px) and (max-width: 991px){
+			
+				.subscribe_space{
+					display: none !important; 
+				}
+				
+				#feedback-button{
+					font-size: 1.9vw !important; 
+					padding: 3% !important; 
+					margin-bottom: 0 !important; 
+					margin-top: 3% !important;
+				}
+				
+				.feedback-icon{
+					font-size: 1.9w !important; 
+				}
+				
+				#mc_embed_signup{
+					font-size: 2vw !important;  
+				}
+				#mc_embed_signup h4 {
+					margin: 0 !important; 
+					font-size: 3vw !important; 
+				}
+				
+				#mc_embed_signup #mc-embedded-subscribe {
+					font-size: 1.9vw !important; 
+					padding: 3% !important; 
+				}
+				
+				#footer-image{
+					width: 8%;
+				}
+				
+				.copyright-text{
+					font-size: 2.5vw !important; 
+				}
+			}
+			
+			@media screen and (min-width: 992px) and (max-width: 1200px){
+			
+				.subscribe_space{
+					display: none !important; 
+				}
+				
+				#feedback-button{
+					font-size: 1.6vw !important; 
+					padding-top: 3% !important; 
+					padding-bottom: 3% !important; 
+					margin-bottom: 0 !important; 
+					margin-top: 2% !important;
+				}
+				
+				.feedback-icon{
+					font-size: 1.6w !important; 
+				}
+				
+				#mc_embed_signup{
+					font-size: 2vw !important;  
+				}
+				#mc_embed_signup h4 {
+					margin: 0 !important; 
+					font-size: 2.7vw !important; 
+				}
+				
+				#mc_embed_signup .mc-field-group input {
+					font-size: 1.6vw !important; 
+					padding-top: 3% !important; 
+					padding-bottom: 3% !important; 
+					margin-top: 10% !important;
+				}
+				
+				#mc_embed_signup #mc-embedded-subscribe {
+					
+					margin-top: 10% !important;				
+				}
+				
+				#footer-image{
+					width: 6.5%;
+				}
+				
+				.copyright-text{
+					font-size: 2vw !important; 
+				}
+
+			}
+			
+			@media screen and (min-width: 1201px){
+				.subscribe_space{
+					display: none !important; 
+				}
+				
+				#feedback-button{
+					font-size: 1.2vw !important; 
+					padding-top: 3% !important; 
+					padding-bottom: 3% !important; 
+					margin-bottom: 0 !important; 
+					margin-top: 3% !important;
+				}
+				
+				.feedback-icon{
+					font-size: 1.2vw !important; 
+				}
+				
+				#mc_embed_signup .mc-field-group input {
+					font-size: 1.2vw !important; 
+					padding-top: 3% !important; 
+					padding-bottom: 3% !important; 
+				}
+				
+				#footer-image{
+					width: 5%;
+				}
+				
+				.copyright-text{
+					font-size: 1.3vw !important; 
+				}
+			}
+			
+		</style>
+
+	</head>
+	<body>
+		<header>
+			<table class="table table-borderless socials" style = "display: inline-block;" id = "top-table">
+				<tr>
+					<td style = "width:95%; text-align: right; vertical-align: middle;">
+						<!--<ul style = "display:inline; text-align: right; position: relative; vertical-align: middle;">-->
+							<a href = "https://www.youtube.com/channel/UCPanTc9nNIgXgApez9Ju3pg" style = "vertical-align: middle"><i class="fab fa-youtube" id = "top-icon"></i></a>
+							<a href = "https://www.instagram.com/realtalkwindsor/" style = "vertical-align: middle"><i class="fab fa-instagram" id = "top-icon"></i></a>
+							<a href = "https://twitter.com/realtalkwindsor?lang=en" style = "vertical-align: middle"><i class="fab fa-twitter" id = "top-icon"></i></a>
+							<a href = "https://www.snapchat.com/add/realtalkwindsor" style = "vertical-align: middle"><i class="fab fa-snapchat-ghost" id = "top-icon"></i></a>
+							<a href = "https://www.facebook.com/RealTalkWindsor/" style = "vertical-align: middle"><i class="fab fa-facebook" id = "top-icon"></i></a>
+					</td>
+					<td style = "width:5%; text-align: left">
+						<form action = "https://facebook.us13.list-manage.com/subscribe/post?u=899e9fdf02d0017b148a243b8&amp;id=24741fb85f" method="get" target="">
+							<button type="submit" class="btn btn-primary" id = "top-button">Subscribe</button>
+						</form>
+					</td>
+				</tr>
+			</table>
+			
+			<div class = "row" style = "margin: auto" id = "middle-row">
+				<div class = "col-md-12" align = "center">
+					<img src = "Images/Logo/RTWLogo.png" class = "header-img">
+				</div>
+			</div>
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark static-top" style = "margin-top:0px; margin-bottom: 0 !important;">
+				<button class="navbar-toggler first-button" id = "ChangeToggle" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<!--<div id="navbar-hamburger">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</div>
+					
+					<div id="navbar-close" class="hidden">
+						<span class="glyphicon glyphicon-remove"></span>
+					</div>
+					<span class="navbar-toggler-icon"></span>-->
+					<div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="nav navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="main.html"><b class = "current-tab">HOME</b></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="events.html"><b>EVENTS</b></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html"><b>ABOUT US</b></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="watch.php"><b>WATCH</b></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="resources.html"><b>RESOURCES</b></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html"><b class = "shop-tab">SHOP</b></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			
+			<script>
+				$(document).ready(function () {
+					$('.first-button').on('click', function () {
+						$('.animated-icon').toggleClass('open');
+					});
+				});
+			</script>
+		</header>
+		<div style = "text-align: center" class = "desktop_coming_up">
+			<h5 class = "second-header" style = "vertical-align: middle"><b>COMING UP FEBRUARY 16</b>&nbsp;&nbsp;&nbsp;ASKING FOR A FRIEND</h5>
+		</div>
+		
+		<div style = "text-align: center" class = "mobile_coming_up">
+			<h5 class = "second-header" style = "vertical-align: middle"><b>COMING UP FEB 16</b>&nbsp;&nbsp;&nbsp;ASKING FOR A FRIEND</h5>
+		</div>
+		
+		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner text-center">
+				<div class="carousel-item active" id = "first-carousel">
+					<div class = "centered">
+						<h1 style = "color: #f5c400 !important;" class = "carousel-header"><b>GET UPDATES FROM US</b></h1>
+							<form action="http://bit.ly/realtalkwindsor" method="get" target="_blank">
+								<button type = "submit" class="carousel-btn"> <b>SIGN UP TODAY</b></button> 
+							</form>
+					</div>
+				</div>
+				
+				<div class="carousel-item" id = "second-carousel">
+					<div class = "img-container"></div>
+					<div class = "centered">
+					    <h1 style = "color: #f5c400 !important" class = "carousel-header"><b>UPCOMING EVENTS</b></h1>
+						<img src = "Images/Events/2020/divine_connection.png" class = "upcoming_pic"/>
+						<form action="events.html" method="get">
+							<button class="carousel-btn"><b>VIEW DETAILS</b></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		
+		<div class="row featurette" style = "margin: auto" id = "shop-featurette">
+			<div class = "centered">
+				<h1 class = "merch-header"><b>MERCH</b></h1>
+				<form action="https://docs.google.com/forms/d/e/1FAIpQLSdeUebpKCAy3F76pOHx4GcvDYgFyVWZXr_P-cSoa2e0uKs2lA/viewform?usp=sf_link" method="get">
+					<button type = "submit" class="shop-btn"><b>SHOP REAL TALK</b></button> 			
+				</form>
+			</div>
+		</div>
+		
+		<div class="owl-carousel owl-theme">
+			<div>
+				<div class = "card">
+					<img src = "Images\Instagram Feed Pics\instagram1.png" class = "image"/></a>
+					<div class = "middle">
+						<a href="https://www.instagram.com/p/CA-yRK9JVMa/" class="btn btn-info" role="button" id = "post-button">View Post</a>
+					</div>
+				</div>
+				</div>
+			<div>
+				<div class = "card">
+					<img src = "Images\Instagram Feed Pics\instagram2.png" class = "image"/></a>
+					<div class = "middle">
+						<a href="https://www.instagram.com/p/CAeFPAog7gd/" class="btn btn-info" role="button" id = "post-button">View Post</a>
+
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class = "card">
+					<img src = "Images\Instagram Feed Pics\instagram3.png" class = "image"/></a>
+					<div class = "middle">
+						<a href="https://www.instagram.com/p/CAWMGlZg2af/" class="btn btn-info" role="button" id = "post-button">View Post</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class = "card">
+					<img src = "Images\Instagram Feed Pics\instagram4.png" class = "image"/></a>
+					<div class = "middle">
+						<a href="https://www.instagram.com/p/CARIKQGAuaK/" class="btn btn-info" role="button" id = "post-button">View Post</a>
+
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class = "card">
+					<img src = "Images\Instagram Feed Pics\instagram5.png" class = "image"/></a>
+					<div class = "middle">
+						<a href="https://www.instagram.com/p/CAL_8M3A2wv/" class="btn btn-info" role="button" id = "post-button">View Post</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class = "card">
+					<img src = "Images\Instagram Feed Pics\instagram6.png" class = "image"/></a>
+					<div class = "middle">
+						<a href="https://www.instagram.com/p/CAGtEyCAZV2/" class="btn btn-info" role="button" id = "post-button">View Post</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class = "card">
+					<img src = "Images\Instagram Feed Pics\instagram7.png" class = "image"/></a>
+					<div class = "middle">
+						<a href="https://www.instagram.com/p/B__BErVAJI4/" class="btn btn-info" role="button" id = "post-button">View Post</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class = "card">
+					<img src = "Images\Instagram Feed Pics\instagram8.png" class = "image"/></a>
+					<div class = "middle">
+						<a href="https://www.instagram.com/p/B_yHJm3JJl2/" class="btn btn-info" role="button" id = "post-button">View Post</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class = "card">
+					<img src = "Images\Instagram Feed Pics\instagram9.png" class = "image"/></a>
+					<div class = "middle">
+						<a href="https://www.instagram.com/p/B_n6w1tJloa/" class="btn btn-info" role="button" id = "post-button">View Post</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class = "card">
+					<img src = "Images\Instagram Feed Pics\instagram10.png" class = "image"/></a>
+					<div class = "middle">
+						<a href="https://www.instagram.com/p/B_gL-d2JJkk/" class="btn btn-info" role="button" id = "post-button">View Post</a>
+
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class = "card">
+					<img src = "Images\Instagram Feed Pics\instagram11.png" class = "image"/></a>
+					<div class = "middle">
+						<a href="https://www.instagram.com/p/B_TgNMgn6X8/" class="btn btn-info" role="button" id = "post-button">View Post</a>
+
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class = "card">
+					<img src = "Images\Instagram Feed Pics\instagram12.png" class = "image"/></a>
+					<div class = "middle">
+						<a href= "https://www.instagram.com/p/B_OFy2PnrYt/" class="btn btn-info" role="button" id = "post-button">View Post</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<footer class="page-footer font-small unique-color-dark">
+			<div style = "text-align: center" class = "stayconnected_bar">
+				<h5 class = "second-header" style = "vertical-align: middle"><b>STAY CONNECTED</b><a class = "bottomsocial" id = "first-icon" href = "https://www.instagram.com/realtalkwindsor/"><i class="fab fa-instagram"></a></i><a class = "bottomsocial" href = "https://www.snapchat.com/add/realtalkwindsor"><i class="fab fa-snapchat-ghost"></a></i><a class = "bottomsocial" href = "https://twitter.com/realtalkwindsor?lang=en"><i class="fab fa-twitter"></a></i><a class = "bottomsocial" href = "https://www.facebook.com/RealTalkWindsor/"><i class="fab fa-facebook"></h5></a></i>
+			</div>
+			<div class = "container-fluid">
+				<div class = "row">
+						<div class = "col-md-3" align = "center">
+							<div class = "row">
+								<div class = "col-md-12">
+									<br>
+									<button type="button" class="btn btn-primary" id = "feedback-button" data-toggle="modal" data-target="#feedbackform"><i class="far fa-comment-alt" class = "feedback-icon"></i>&nbsp;&nbsp;Give Us Feedback</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class = "col-md-1"></div>
+					<div class = "col-md-8">
+						<form action="https://facebook.us13.list-manage.com/subscribe/post?u=899e9fdf02d0017b148a243b8&amp;id=24741fb85f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="hidden_iframe" onsubmit="return validateForm();" novalidate>
+							<div id="mc_embed_signup">
+								<div class = "row">
+									<div class = "col-md-12" align = "center">
+										<h4 style = "text-align: center; color: white;"><b>GET UPDATES FROM US</b></h4>
+									</div>
+								</div>
+								<div class = "row">
+									<div class = "col-md-3"align = "center">
+										<div class="mc-field-group">
+											<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder = "Email*">
+										</div>
+									</div>
+									<div class = "col-md-3" align = "center">
+										<div class="mc-field-group">
+											<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder = "First Name">
+										</div>
+									</div>
+									<div class = "col-md-3" align = "center">
+										<div class="mc-field-group">
+											<input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder = "Last Name">
+										</div>
+									</div>
+									<div class = "col-md-3" align = "center">
+										<br class = "subscribe_space">
+										<div id="mce-responses" class="clear">
+											<div class="response" id="mce-error-response" style="display:none"></div>
+											<div class="response" id="mce-success-response" style="display:none"></div>
+										</div>    
+										<div style="position: absolute; left: -5000px" aria-hidden="true"><input type="text" name="b_899e9fdf02d0017b148a243b8_24741fb85f" tabindex="-1" value=""></div>
+										<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class = "col-md-1"></div>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<div class = "row" style = "margin: auto">
+				<div class = "col-md-12" align = "center">
+					<br>
+					<img id = "footer-image" style = "margin: auto" alt = "RTW Logo" src = "Images/Logo/RTW_small_logo.png" />
+					<p class = "copyright-text" style = "font-size: 14px"> © 2020 Real Talk Windsor</p>
+				</div>
+			</div>
+		</footer>
+		
+		<div class="modal fade" id="feedbackform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">GIVE US FEEDBACK</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h5 style = "color:white">Do you have a comment or suggestion? Your feedback helps us improve the program for everyone. <br><br>Share your feedback here:</h5>
+						<script type="text/javascript">var submitted=false;</script>
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='feedbackthanks.html';}"></iframe> 
+						<form action = "https://docs.google.com/forms/u/2/d/e/1FAIpQLSeIKcfKr6-DAHLT96SfvYACa7o_f6TaE4N-9M6XJExyWrsWwQ/formResponse" method = "post" target="hidden_iframe" onsubmit="return validateForm();" >
+						<div class="form-group">
+							<textarea class="form-control" name = "entry.903777498" id="message-text" required></textarea>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input class="btn btn-primary" id = "pop-up-button" type="submit" name = "submit" value="Submit">
+					</div>
+						</form>
+					<script type="text/javascript">
+						function validateForm(){
+							submitted = true;
+							return true;
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+		
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	
+		<script src="owl.carousel.min.js"></script>
+		<script>
+			$('.owl-carousel').owlCarousel({
+				autoplay: true,
+				loop: true,
+				autoplayTimeout:3000,
+				nav:true,
+				margin: 10,
+				autoplayHoverPause:true,
+				dots: false,
+				responsive:{
+					0:{
+						items: 1,
+					},
+					
+					600:{
+						items: 3,
+					},
+
+					767:{
+						items: 3,
+					},
+					
+					991:{
+						items: 6,
+					},
+				}
+			});
+		</script>
+  </body>
+</html>
